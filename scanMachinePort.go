@@ -1,5 +1,12 @@
 package scanMachinePort
 
+import (
+	"fmt"
+	"net"
+	"strconv"
+	"strings"
+)
+
 /**
   描述：
      默认扫描本机端口

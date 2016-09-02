@@ -6,17 +6,12 @@
 package main
 
 import (
-	"fmt"
-	"net"
-	"strconv"
-	"strings"
-
 	"github.com/zhangjunfang/scanMachinePort"
 )
 
 func main() {
-	scanMachinePort.ScanPort(1024, 65535)  //默认扫描本机
-	scanMachinePort.ScanPreferredMachinePort("0.0.0.0", 1024, 65535) //指定机器扫描
+	scanMachinePort.ScanPort(1024, 65535)
+	scanMachinePort.ScanPreferredMachinePort("0.0.0.0", 1024, 65535)
 }
 
 ```
